@@ -8,7 +8,7 @@
 				$.getJSON('dnd.json', function(data) {
 					$.each(data.monsters, function(i, f) {
 						var tblRow = "<button type='button' onclick='collapsible(this.id)' id='" + f.name + "' class='collapsible'>" + f.name + "</button><div class='content' id='" + f.name + "Content'><p>Lorem ipsum dolor sit amet</p></div>";
-						$(tblRow).appendTo(document.getElementsByClassName("listing");
+						$(tblRow).appendTo(document.getElementsByClassName("listing"));
 					});
 				});
 			});
