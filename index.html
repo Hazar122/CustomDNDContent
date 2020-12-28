@@ -1,41 +1,32 @@
 <html>
-<head>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+	<head>
+		<link href="cards.css" rel="stylesheet">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+		<script>
+			$(function() {
+				var dnd = [];
+				$.getJSON('dnd.json', function(data) {
+					$.each(data.monsters, function(i, f) {
+						var tblRow = "<tr><td><button type='button' class='collapsible'>" + f.name + "</button></td></tr>";
+						$(tblRow).appendTo("#userdata tbody");
+					});
+				});
+			});
+		</script>
+	</head>
 
-<script>
+	<body>
+		<div class="wrapper">
+			<div class="profile">
+				<table id= "userdata" border="2">
+					<thead>
+						<th>Monsters</th>
+					</thead>
+					<tbody>
+				   </tbody>
+			   </table>
+			</div>
+		</div>
 
-    $(function() {
-
-
-   var dnd = [];
-
-   $.getJSON('dnd.json', function(data) {
-       $.each(data.monsters, function(i, f) {
-          var tblRow = "<tr><td><button type='button' class='collapsible'>" + f.name + "</button></td></tr>";
-           $(tblRow).appendTo("#userdata tbody");
-     });
-
-   });
-
-});
-</script>
-</head>
-
-<body>
-
-<div class="wrapper">
-<div class="profile">
-    <table id= "userdata" border="2">
-		<thead>
-            <th>Monsters</th>
-        </thead>
-      <tbody>
-
-       </tbody>
-   </table>
-
-</div>
-</div>
-
-</body>
+	</body>
 </html>
