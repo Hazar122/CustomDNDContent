@@ -11,7 +11,7 @@
 
    $.getJSON('people.json', function(data) {
        $.each(data.person, function(i, f) {
-          var tblRow = "<tr><td><button type="button" class="collapsible">" + f.name + "</button></td></tr>";
+          var tblRow = "<tr><td><button type='button' class='collapsible'>" + f.name + "</button></td></tr>";
            $(tblRow).appendTo("#userdata tbody");
      });
 
