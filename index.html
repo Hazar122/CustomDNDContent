@@ -1,34 +1,45 @@
 <html>
-	<head>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 
-		<script>
+<script>
 
-			fetch('dnd.json')
-			.then(function (response) {
-		        return response.json();
-			 })
-			.then(function (data) {
-				appendData(data);
-			})
+    $(function() {
 
 
-			function appendData(data) {
-			  var mainContainer = document.getElementById("myData");
-			  for (var i = 0; i < data.length; i++) {
-				var div = document.createElement("div");
-				div.innerHTML = 'Name: ' + data[i].set.holiday.wintermas.monsters ;
-				mainContainer.appendChild(div);
-			  }
-			}
-		</script>
-		
-		
-	</head>
-	
-	
-	<body>
-		<div id="myData"></div>
+   var people = [];
 
-	</body>
+   $.getJSON('people.json', function(data) {
+       $.each(data.person, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
+           "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+     });
+
+   });
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="profile">
+   <table id= "userdata" border="2">
+  <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>City</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+
+</body>
 </html>
