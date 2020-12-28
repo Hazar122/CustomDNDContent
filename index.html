@@ -1,24 +1,21 @@
 <html>
 	<head>
-		<link href="cards.css" rel="stylesheet">
+		<link href="mCards.css" rel="stylesheet">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 		<script>
 			$(function() {
 				var dnd = [];
 				$.getJSON('dnd.json', function(data) {
 					$.each(data.monsters, function(i, f) {
-						var tblRow = "<tr><td><button type='button' onclick='collapsible(this.id)' id='" + f.name + "' class='collapsible'>" + f.name + "</button><div class='content' id='" + f.name + "Content'><p>Lorem ipsum dolor sit amet</p></div></td></tr>";
-						$(tblRow).appendTo("#userdata tbody");
+						var tblRow = "<div><button type='button' onclick='collapsible(this.id)' id='" + f.name + "' class='collapsible'>" + f.name + "</button><div class='content' id='" + f.name + "Content'><p>Lorem ipsum dolor sit amet</p></div></div>";
+						$(tblRow).appendTo(document.getElementsByClassName("listing"));
 					});
 				});
 			});
 			
 			function collapsible(clickedid){
-				console.log(clickedid);
 				var x = clickedid + "Content";
-				console.log(x);
 				var y = document.getElementById(x);
-				console.log(y);
 				if (y.style.display == "block"){
 					 y.style.display = "none"
 				} else {
@@ -30,16 +27,10 @@
 	</head>
 
 	<body>
+	
 		<div class="wrapper">
-			<div class="profile">
-				<table id= "userdata" border="2">
-					<thead>
-						<th>Monsters</th>
-					</thead>
-					<tbody>
-				   </tbody>
-			   </table>
-			</div>
+			<ul class="listing">
+			</ul>
 		</div>
 
 	</body>
