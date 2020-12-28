@@ -17,8 +17,6 @@
 }
 
 .cards {
-	border: 5px outset red;
 	background-image: url(Images/Design/Background.png);
 	margin: 20px;
-	border-image: url(Images/Design/1a.png);
 }
