@@ -9,8 +9,8 @@
 
    var people = [];
 
-   $.getJSON('people.json', function(data) {
-       $.each(data.person, function(i, f) {
+   $.getJSON('dnd.json', function(data) {
+       $.each(data.monsters, function(i, f) {
           var tblRow = "<tr><td><button type='button' class='collapsible'>" + f.name + "</button></td></tr>";
            $(tblRow).appendTo("#userdata tbody");
      });
