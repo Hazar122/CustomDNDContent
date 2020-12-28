@@ -7,7 +7,7 @@
 				var dnd = [];
 				$.getJSON('dnd.json', function(data) {
 					$.each(data.monsters, function(i, f) {
-						var tblRow = "<div><button type='button' onclick='collapsible(this.id)' id='" + f.name + "' class='collapsible'>" + f.name + "</button><div class='content' id='" + f.name + "Content'><p>Lorem ipsum dolor sit amet</p></div></div>";
+						var tblRow = "<div class='cards'><button type='button' onclick='collapsible(this.id)' id='" + f.name + "' class='collapsible'>" + f.name + "</button><div class='content' id='" + f.name + "Content'><p>Lorem ipsum dolor sit amet</p></div></div>";
 						$(tblRow).appendTo(document.getElementsByClassName("listing"));
 					});
 				});

@@ -1,7 +1,5 @@
 .collapsible {
-	background-color: #777;
-	background-image: url(Images/Design/Background.png);
-	color: white;
+	color: black;
 	cursor: pointer;
 	padding: 18px;
 	width: 100%;
@@ -11,14 +9,14 @@
 	font-size: 15px;
 }
 
-.active, .collapsible:hover {
-	
-}
-
 .content {
 	padding: 0 18px;
 	display: none;
 	overflow: hidden;
-	background-color: #f1f1aa;
+}
+
+.cards {
+	border: 5px outset red;
 	background-image: url(Images/Design/Background.png);
+	margin: 20px;
 }
