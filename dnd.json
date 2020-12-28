@@ -1,0 +1,26 @@
+{
+  "set": {
+    "holiday": {
+      "wintermas": {
+        "monsters": [
+          {
+			  "name":"krampus"
+			  "str": 1,
+			  "dex": 1
+		  }
+        ]
+      }
+    },
+    "content": {
+      "nightmare_before_wintermas": {
+        "monsters": [
+          {
+			  "name": "animated pumpkin",
+			  "str": 2,
+			  "dex": 2
+		  }
+        ]
+      }
+    }
+  }
+}
