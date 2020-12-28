@@ -3,27 +3,11 @@
 		<link href="cards.css" rel="stylesheet">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 		<script>
-			var coll = document.getElementsByClassName("collapsible");
-			var i;
-
-			for (i = 0; i < coll.length; i++) {
-			  coll[i].addEventListener("click", function() {
-				this.classList.toggle("active");
-				var content = this.nextElementSibling;
-				if (content.style.display === "block") {
-				  content.style.display = "none";
-				} else {
-				  content.style.display = "block";
-				}
-			  });
-			}
-			
-			
 			$(function() {
 				var dnd = [];
 				$.getJSON('dnd.json', function(data) {
 					$.each(data.monsters, function(i, f) {
-						var tblRow = "<tr><td><button type='button' class='collapsible'>" + f.name + "</button><div class='content'><p>Lorem ipsum dolor sit amet</p></div></td></tr>";
+						var tblRow = "<tr><td><button type='button' onclick='collapsible()' id='"+f.name"+' class='collapsible'>" + f.name + "</button><div class='content'><p>Lorem ipsum dolor sit amet</p></div></td></tr>";
 						$(tblRow).appendTo("#userdata tbody");
 					});
 				});
