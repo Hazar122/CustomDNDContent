@@ -1,13 +1,14 @@
 <html>
 	<head>
 		<link href="mCards.css" rel="stylesheet">
+		<link href="mSBlocks.css" rel="stylesheet">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 		<script>
 			$(function() {
 				var dnd = [];
 				$.getJSON('dnd.json', function(data) {
 					$.each(data.monsters, function(i, f) {
-						var tblRow = "<div class='cards'><button type='button' onclick='collapsible(this.id)' id='" + f.name + "' class='collapsible'>" + f.name + "</button><div class='content' id='" + f.name + "Content'><p>Lorem ipsum dolor sit amet</p></div></div>";
+						var tblRow = "<div class='cards'><button type='button' onclick='collapsible(this.id)' id='" + f.name + "' class='collapsible'>" + f.name + "</button><div class='content' id='" + f.name + "Content'><blockquote style='margin:0; top: 600px;'><h2 id='" + f.name + "block' style='text-align:left'>"+ f.name +"</h2><p><em>"+ f.type +", " + f.allignment + "</em></p><hr><ul><li><strong>Armor Class</strong>"+ f.ac + "</li><li><strong>Hit Points</strong>"+ f.hp + ", " + f.dice + "</li><li><strong>Speed</strong>" + f.speed + "</li></ul></blockquote></div></div>";
 						$(tblRow).appendTo(document.getElementsByClassName("listing"));
 					});
 				});
@@ -32,6 +33,49 @@
 			<ul class="listing">
 			</ul>
 		</div>
+		
+		
+					<!--
+					<hr>
+					<table>
+						<thead>
+							<tr>
+								<th style="text-align:center">STR</th>
+								<th style="text-align:center">DEX</th>
+								<th style="text-align:center">CON</th>
+								<th style="text-align:center">INT</th>
+								<th style="text-align:center">WIS</th>
+								<th style="text-align:center">CHA</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="text-align:center">3 (-4)</td>
+								<td style="text-align:center">7 (-2)</td>
+								<td style="text-align:center">11 (+0)</td>
+								<td style="text-align:center">3 (-4)</td>
+								<td style="text-align:center">6 (-2)</td>
+								<td style="text-align:center">10 (+0)</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr>
+					<ul>
+						<li><strong>Damage Immunities</strong> fire</li>
+						<li><strong>Damage Vulnerabilities</strong> bludgeoning</li>
+						<li><strong>Senses</strong> blindsight 30 ft. passive Perception 7</li>
+						<li><strong>Languages</strong> -- </li>
+						<li><strong>Challenge</strong> 0 (10 XP)</li>
+					</ul>
+					<hr>
+					<p><strong><em>False Appearence.</em></strong> While this creature isnt moving it is indistinguishable from a regular pumpkin.</p>
+					<br>
+					<p><strong><em>Death Burst.</em></strong> When this pumpkin dies it explodes in a burst of fire. Each creature within 10 feet of it must make a Dex DC 10 Saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a success</p>
+					<h3 id="actions">Actions</h3>
+					<p><strong><em>Combust</em></strong> The pumpkin explodes in a burst of fire. Each creature within 30 feet of it must make a Dex DC 10 Saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a success</p><br><br><br><br>
+					-->
+					
+		
 
 	</body>
 </html>

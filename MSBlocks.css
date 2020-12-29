@@ -1,0 +1,70 @@
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+blockquote {
+    position: relative;
+    padding-top: 15px;
+    background-color: #FDF1DC;
+    border-style: solid;
+    border-width: 10px;
+    border-image: url(Images/Design/OrangeStatDivider.png)10;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: MrJeeves;
+    font-weight: 800;
+    color: #58180D;
+	font-size: .705cm;
+}
+
+em {
+    font-style: italic;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+}
+
+hr {
+	visibility: visible;
+    height: 6px;
+    margin: 4px 0px;
+    background-image: url(Images/Design/RedStatDivider.png);
+    background-size: 100% 100%;
+    border: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+
+
+
