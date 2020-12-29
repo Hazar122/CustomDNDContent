@@ -23,6 +23,7 @@ h2 {
     font-weight: 800;
     color: #58180D;
 	font-size: .705cm;
+	margin:0px;
 }
 
 em {
@@ -65,7 +66,7 @@ li {
     text-align: -webkit-match-parent;
 }
 
-ul{
+.monsterac ul{
 	margin-bottom: .5em;
     padding-left: 1em;
     text-indent: -1em;
