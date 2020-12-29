@@ -6,7 +6,6 @@ blockquote {
     margin-inline-end: 40px;
 }
 blockquote {
-    position: relative;
     padding-top: 15px;
     background-color: #FDF1DC;
     border-style: solid;
@@ -20,6 +19,7 @@ h2 {
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+	margin : 0px;
     font-family: MrJeeves;
     font-weight: 800;
     color: #58180D;
