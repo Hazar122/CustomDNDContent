@@ -31,7 +31,8 @@ em {
 }
 
 p {
-	margin : 0px;
+	margin-top : 0px;
+	margin-bottom : 0px;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
