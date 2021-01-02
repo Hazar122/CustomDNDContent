@@ -4,31 +4,31 @@
            "name": "Dodo",
            "type": "Small beast",
 		   "allignment": "unaligned",
-		   "ac": 9,
-		   "hp": 10,
+		   "ac": "9",
+		   "hp": "10",
 		   "dice": "3d6",
 		   "speed": "20 ft.",
-		   "str": 7,
-           "dex": 8,
-		   "con": 10,
-           "int": 1,
-		   "wis": 6,
-           "cha": 11
+		   "str": "7",
+           "dex": "8",
+		   "con": "10",
+           "int": "1",
+		   "wis": "6",
+           "cha": "11"
        },
        {
            "name": "Diplodocus",
            "type": "Gargantuan Monstrosity",
 		   "allignment": "unaligned",
-		   "ac": 14,
-		   "hp": 100,
+		   "ac": "14",
+		   "hp": "100",
 		   "dice": "5d20+50",
 		   "speed": "25 ft.",
-		   "str": 20,
-           "dex": 12,
-		   "con": 17,
-           "int": 10,
-		   "wis": 11,
-           "cha": 14
+		   "str": "20",
+           "dex": "12",
+		   "con": "17",
+           "int": "10",
+		   "wis": "11",
+           "cha": "14"
        }
    ]
 }
