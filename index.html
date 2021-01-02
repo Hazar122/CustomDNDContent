@@ -8,7 +8,7 @@
 				var dnd = [];
 				$.getJSON('dnd.json', function(data) {
 					$.each(data.monsters, function(i, f) {
-						var tblRow = "<div class='cards' style='overflow-y:auto;'><button type='button' onclick='collapsible(this.id)' id='" + f.name + "' class='collapsible'>" + f.name + "</button><div class='content' id='" + f.name + "Content'><blockquote style='margin:0; top: 600px;'><h2 id='" + f.name + "block' style='text-align:left'>"+ f.name +"</h2><p><em>"+ f.type +", " + f.allignment + "</em></p><hr><ul class='monsterac'><li><strong>Armor Class</strong> "+ f.ac + "</li><li><strong>Hit Points</strong> "+ f.hp + ", " + f.dice + "</li><li><strong>Speed</strong> " + f.speed + "</li></ul></blockquote></div></div>";
+						var tblRow = "<div class='cards' ><button type='button' onclick='collapsible(this.id)' id='" + f.name + "' class='collapsible'>" + f.name + "</button><div class='content' id='" + f.name + "Content'><blockquote style='margin:0; top: 600px;'><h2 id='" + f.name + "block' style='text-align:left'>"+ f.name +"</h2><p><em>"+ f.type +", " + f.allignment + "</em></p><hr><ul class='monsterac'><li><strong>Armor Class</strong> "+ f.ac + "</li><li><strong>Hit Points</strong> "+ f.hp + ", " + f.dice + "</li><li><strong>Speed</strong> " + f.speed + "</li></ul></blockquote></div></div>";
 						$(tblRow).appendTo(document.getElementsByClassName("listing"));
 					});
 				});
@@ -29,7 +29,7 @@
 
 	<body>
 	
-		<div class="wrapper">
+		<div class="wrapper" style='overflow-y:auto;'>
 			<ul class="listing">
 			</ul>
 		</div>
