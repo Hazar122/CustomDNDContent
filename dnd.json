@@ -14,10 +14,10 @@
       "int": "1 (-5)",
       "wis": "6 (-2)",
       "cha": "11 (+0)",
-      "dmgImmunities": " --- ",
+      "dmgImmunities": "--- ",
       "dmgVulnerabilities": "Thunder, Necrotic",
       "senses": "Passive Perception 2",
-      "languages": " ---",
+      "languages": "---",
       "chal": " 0(10xp)",
       "abilities": [
         {
@@ -46,10 +46,10 @@
       "int": "10 (+0)",
       "wis": "11 (+0)",
       "cha": "14 (+2)",
-	  "dmgImmunities": " --- ",
+	  "dmgImmunities": "--- ",
       "dmgVulnerabilities": "---",
       "senses": "Passive Perception 11, blindsight 30ft.",
-      "languages": " ---",
+      "languages": "--- ",
       "chal": " 4(1,200xp)",
 	  "abilities": [
         {
