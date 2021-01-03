@@ -69,6 +69,13 @@ li {
     text-indent: -1em;
     list-style-type: none;
 }
+.monsterdata {
+	margin-bottom: .5em;
+    padding-left: 1em;
+    text-indent: -1em;
+    list-style-type: none;
+}
+
 
 
 .listing {
