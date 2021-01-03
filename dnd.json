@@ -1,34 +1,61 @@
 {
-   "monsters": [
-       {
-           "name": "Dodo",
-           "type": "Small beast",
-		   "allignment": "unaligned",
-		   "ac": "9",
-		   "hp": "10",
-		   "dice": "(3d6)",
-		   "speed": "20 ft.",
-		   "str": "7 (-2)",
-           "dex": "8 (-1)",
-		   "con": "10 (+0)",
-           "int": "1 (-5)",
-		   "wis": "6 (-2)",
-           "cha": "11 (+0)"
-       },
-       {
-           "name": "Diplodocus",
-           "type": "Gargantuan Monstrosity",
-		   "allignment": "unaligned",
-		   "ac": "14",
-		   "hp": "100",
-		   "dice": "(5d20+50)",
-		   "speed": "25 ft.",
-		   "str": "20 (+5)",
-           "dex": "12 (+1)",
-		   "con": "17 (+3)",
-           "int": "10 (+0)",
-		   "wis": "11 (+0)",
-           "cha": "14 (+2)"
-       }
-   ]
+  "monsters": [
+    {
+      "name": "Dodo",
+      "type": "Small beast",
+      "allignment": "unaligned",
+      "ac": "9",
+      "hp": "10",
+      "dice": "(3d6)",
+      "speed": "20 ft.",
+      "str": "7 (-2)",
+      "dex": "8 (-1)",
+      "con": "10 (+0)",
+      "int": "1 (-5)",
+      "wis": "6 (-2)",
+      "cha": "11 (+0)",
+      "dmgImmunities": " --- ",
+      "dmgVulnerabilities": "Thunder, Necrotic",
+      "senses": "Passive Perception 2",
+      "languages": " ---",
+      "chal": " 0(10xp)",
+      "a": "",
+      "abilities": [
+        {
+          "MindBlank": "Mind Blank",
+          "MindBlankDesc": "Any creature that shapeshifts into a Dodo takes a negative 2 points to their intelligence modifier for 48 hours, even when they shapeshift back into their natural form of any other form."
+        }
+      ],
+      "Actions": [
+        {
+          "beak": "Beak.",
+		  "beakDesc": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1(1d4) slashing damage."
+        }
+      ]
+    },
+    {
+      "name": "Diplodocus",
+      "type": "Gargantuan Monstrosity",
+      "allignment": "unaligned",
+      "ac": "14",
+      "hp": "100",
+      "dice": "(5d20+50)",
+      "speed": "25 ft.",
+      "str": "20 (+5)",
+      "dex": "12 (+1)",
+      "con": "17 (+3)",
+      "int": "10 (+0)",
+      "wis": "11 (+0)",
+      "cha": "14 (+2)",
+	  "abilities": [
+        {
+        }
+      ],
+      "Actions": [
+        {
+
+        }
+      ]
+    }
+  ]
 }
