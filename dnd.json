@@ -21,8 +21,8 @@
       "chal": " 0(10xp)",
       "abilities": [
         {
-          "mindBlank": "Mind Blank",
-          "mindBlankDesc": "Any creature that shapeshifts into a Dodo takes a negative 2 points to their intelligence modifier for 48 hours, even when they shapeshift back into their natural form of any other form."
+          "mindBlank": "<p>Mind Blank</p>",
+          "mindBlankDesc": "<br><p>Any creature that shapeshifts into a Dodo takes a negative 2 points to their intelligence modifier for 48 hours, even when they shapeshift back into their natural form of any other form.</P>"
         }
       ],
       "Actions": [
