@@ -64,6 +64,37 @@
 
         }
       ]
+    },
+    {
+      "name": "a",
+      "type": "a",
+      "allignment": "a",
+      "ac": "a",
+      "hp": "a",
+      "dice": "a",
+      "speed": "a",
+      "str": "a",
+      "dex": "a",
+      "con": "a",
+      "int": "a",
+      "wis": "a",
+      "cha": "a",
+	  "dmgImmunities": "a",
+      "dmgVulnerabilities": "a",
+      "senses": "a",
+      "languages": "a",
+      "chal": " a",
+	  "hasAbilities": false,
+	  "abilities": [
+        {
+        }
+      ],
+	  "hasActions": false,
+      "actions": [
+        {
+
+        }
+      ]
     }
   ]
 }
