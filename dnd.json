@@ -19,12 +19,14 @@
       "senses": "Passive Perception 2",
       "languages": "---",
       "chal": " 0(10xp)",
+	  "hasAbilities": true,
       "abilities": [
         {
           "mindBlank": "<p><strong><em>Mind Blank: </strong></em>" ,
           "mindBlankDesc": "Any creature that shapeshifts into a Dodo takes a negative 2 points to their intelligence modifier for 48 hours, even when they shapeshift back into their natural form of any other form.</P>"
         }
       ],
+	  "hasActions": true,
       "actions": [
         {
           "beak": "<p><strong><em>Beak: </strong></em>",
@@ -51,10 +53,12 @@
       "senses": "Passive Perception 11, blindsight 30ft.",
       "languages": "--- ",
       "chal": " 4(1,200xp)",
+	  "hasAbilities": false,
 	  "abilities": [
         {
         }
       ],
+	  "hasActions": false,
       "actions": [
         {
 
