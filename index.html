@@ -11,7 +11,7 @@
 					$.each(data.monsters, function(a, f) {
 						var tblRow = "<div class='cards' ><button type='button' onclick='collapsible(this.id)' id='" + f.name + "' class='collapsible'>" + f.name + "</button><div class='content' id='" + f.name + "Content'><blockquote style='margin:0; top: 600px;'><h2 id='" + f.name + "block' style='text-align:left'>"+ f.name +"</h2><p><em>"+ f.type +", " + f.allignment + "</em></p><hr><ul class='monsterac'><li><strong>Armor Class</strong> "+ f.ac + "</li><li><strong>Hit Points</strong> "+ f.hp + ", " + f.dice + "</li><li><strong>Speed</strong> " + f.speed + "</li></ul><hr><table><thead><tr><th style='text-align:center'>STR</th><th style='text-align:center'>DEX</th><th style='text-align:center'>CON</th><th style='text-align:center'>INT</th><th style='text-align:center'>WIS</th><th style='text-align:center'>CHA</th></tr></thead><tbody><tr><td style='text-align:center'>"+ f.str + "</td><td style='text-align:center'>"+ f.dex + "</td><td style='text-align:center'>"+ f.con + "</td><td style='text-align:center'>"+ f.int + "</td><td style='text-align:center'>"+ f.wis + "</td><td style='text-align:center'>"+ f.cha + "</td></tr></tbody></table><hr><ul class='monsterdata'><li><strong>Damage Immunities</strong> " + f.dmgImmunities +"</li><li><strong>Damage Vulnerabilities</strong> " + f.dmgVulnerabilities +"</li><li><strong>Senses</strong> " + f.senses +"</li><li><strong>Languages</strong> " + f.languages +"</li><li><strong>Challenge</strong> " + f.chal +"</li></ul><hr>";
 						for (i=0; i<Object.entries(f.abilities[0]).length; i++){
-							tblRow = tblRow + Object.entries(f.abilities[0])[i][1];
+							tblRow = tblRow + "<p>" + Object.entries(f.abilities[0])[i][1] + "</p>";
                         }
 						tblRow = tblRow + "</blockquote></div></div>" ;
 						$(tblRow).appendTo(document.getElementsByClassName("listing"));
@@ -57,7 +57,7 @@
 					<h3 id="actions">Actions</h3>
 					<p><strong><em>Combust</em></strong> The pumpkin explodes in a burst of fire. Each creature within 30 feet of it must make a Dex DC 10 Saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a success</p><br><br><br><br>
 					-->
-		<p> Test 35 </p>
+		<p> Final </p>
 		
 
 	</body>
