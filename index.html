@@ -23,16 +23,17 @@
 						} else{ }
 						tblRow = tblRow + "</blockquote></div></div>" ;
 						$(tblRow).appendTo(document.getElementsByClassName("listing"));
+						$('.cards').sort(function(a, b) {
+						if (a.textContent < b.textContent) {
+							return -1;
+						} else {
+							return 1;
+						}
+						}).appendTo('.listing');
 					});
 				});
 			});
-			$('.cards').sort(function(a, b) {
-				if (a.textContent < b.textContent) {
-					return -1;
-				} else {
-					return 1;
-				}
-			}).appendTo('.listing');
+			
 			
 			function collapsible(clickedid){
 				var x = clickedid + "Content";
