@@ -85,6 +85,7 @@ li {
 }
 .listing {
 	overflow-y:scroll;
+	padding-right: 40px;
 }
 .actions {
 	font-family: ScalySans;
