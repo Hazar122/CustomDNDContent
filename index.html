@@ -13,6 +13,10 @@
 						for (i=0; i<Object.entries(f.abilities[0]).length; i++){
 							tblRow = tblRow + Object.entries(f.abilities[0])[i][1];
                         }
+						tblRow = tblRow + "<h3 id="actions">Actions</h3>"
+						for (i=0; i<Object.entries(f.actions[0]).length; i++){
+							tblRow = tblRow + Object.entries(f.actions[0])[i][1];
+                        }
 						tblRow = tblRow + "</blockquote></div></div>" ;
 						$(tblRow).appendTo(document.getElementsByClassName("listing"));
 					});
@@ -40,10 +44,6 @@
 		</div>
 		
 					<!--
-					<p><strong><em>False Appearence.</em></strong> While this creature isnt moving it is indistinguishable from a regular pumpkin.</p>
-					<br>
-					<p><strong><em>Death Burst.</em></strong> When this pumpkin dies it explodes in a burst of fire. Each creature within 10 feet of it must make a Dex DC 10 Saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a success</p>
-					<h3 id="actions">Actions</h3>
 					<p><strong><em>Combust</em></strong> The pumpkin explodes in a burst of fire. Each creature within 30 feet of it must make a Dex DC 10 Saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a success</p><br><br><br><br>
 					-->
 		<p> yay </p>
