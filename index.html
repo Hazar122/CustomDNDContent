@@ -25,6 +25,13 @@
 						$(tblRow).appendTo(document.getElementsByClassName("listing"));
 					});
 				});
+				$('.cards').sort(function(a, b) {
+				    if (a.textContent < b.textContent) {
+					    return -1;
+				    } else {
+					    return 1;
+				    }
+				}).appendTo('.listing');
 			});
 			
 			function collapsible(clickedid){
