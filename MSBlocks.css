@@ -81,6 +81,7 @@ li {
   margin: auto;
   width: 85%;
   padding: 10px;
+  background-color: black;
 }
 .listing {
 	overflow-y:scroll;
@@ -124,6 +125,5 @@ div[name="cards"] {
 }
 
 #myInput{
-	margin: 20px;
-	display: block;
+	width: 100%;
 }
