@@ -46,17 +46,16 @@
 				
 			}
 			function Search() {
-				var input, filter, ul, div , a, i, txtValue;
+				var input, filter, card, a, i, txtValue;
 				input = document.getElementById("myInput");
 				filter = input.value.toUpperCase();
-				ul = document.getElementById("searchable");
-				div = ul.getElementById("cards");
-				for (i = 0; i < div.length; i++) {
-					txtValue = div.item(i).className;
+				card = document.getElementById("cards");
+				for (i = 0; i < card.length; i++) {
+					txtValue = card.item(i).className;
 					if (txtValue.toUpperCase().indexOf(filter) > -1) {
-						div[i].style.display = "";
+						card[i].style.display = "";
 					} else {
-						div[i].style.display = "none";
+						card[i].style.display = "none";
 					}
 				}
 			}
