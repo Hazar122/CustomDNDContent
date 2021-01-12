@@ -50,10 +50,9 @@
 				input = document.getElementById("myInput");
 				filter = input.value.toUpperCase();
 				ul = document.getElementById("searchable");
-				div = ul.getElementsByTagName("uh");
-				for (i = 0; i < li.length; i++) {
-					a = li[i].getElementsByTagName("a")[0];
-					txtValue = a.textContent || a.innerText;
+				div = ul.getElementsByClassName("cards");
+				for (i = 0; i < div.length; i++) {
+					txtValue = div.item(i).className;
 					if (txtValue.toUpperCase().indexOf(filter) > -1) {
 						li[i].style.display = "";
 					} else {
