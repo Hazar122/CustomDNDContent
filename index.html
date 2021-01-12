@@ -50,7 +50,7 @@
 				input = document.getElementById("myInput");
 				filter = input.value.toUpperCase();
 				ul = document.getElementById("searchable");
-				div = ul.getElementsById("cards");
+				div = ul.getElementById("cards");
 				for (i = 0; i < div.length; i++) {
 					txtValue = div.item(i).className;
 					if (txtValue.toUpperCase().indexOf(filter) > -1) {
