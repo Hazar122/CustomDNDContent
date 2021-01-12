@@ -119,7 +119,7 @@ table {
 
 }
 
-#cards {
+div[name="cards"] {
 	background-image: url(Images/Design/Background.png);
 	margin: 20px;
 }
