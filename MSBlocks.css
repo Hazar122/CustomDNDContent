@@ -125,5 +125,6 @@ div[name="cards"] {
 }
 
 #myInput{
-	
+	margin: 20px;
+	display: block;
 }
