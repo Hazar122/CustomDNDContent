@@ -17,8 +17,8 @@
 				}	
 						
 				h = document.getElementsByClassName("monsters");
-				h[0].style.height = $(document).height() - 16 - 20 - 32
-				h[0].style.maxHeight = $(document).height() - 16 - 20 - 32
+				h[0].style.height = $(document).height() - 16 - 20 - 32 - 45
+				h[0].style.maxHeight = $(document).height() - 16 - 20 - 32 - 45
 				
 				$.getJSON('dnd.json', function(data) {
 					$.each(data.monsters, function(a, f) {
