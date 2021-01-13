@@ -15,10 +15,6 @@
 				for (i=0; i<nav[0].children[0].childElementCount; i++){
 					nav[0].children[0].children[i].style.width = 100/ nav[0].children[0].childElementCount + "%";
 				}	
-						
-				h = document.getElementsByClassName("monsters");
-				h[0].style.height = $(document).height() - 16 - 20 - 32 - 45
-				h[0].style.maxHeight = $(document).height() - 16 - 20 - 32 - 45
 				
 				$.getJSON('dnd.json', function(data) {
 					$.each(data.monsters, function(a, f) {
@@ -95,7 +91,7 @@
 				</li>
 			</ul>
 		</nav> 
-		<div class="wrapper" style='overflow-y:auto;'>
+		<div class="wrapper">
 			<ul class="monsters" id="searchable">
 				<input type="text" id="myInput" onkeyup="Search()" placeholder="Search for Monsters.." title="Type in a Monster">
 			</ul>
