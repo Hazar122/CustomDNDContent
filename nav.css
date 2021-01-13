@@ -1,22 +1,26 @@
 #navi {
-  left: 0px;
-  right: 0px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
+	left: 0px;
+	right: 0px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 45%;
 }
 
 #navi2{
-  float: left;
-  text-align: center;
+	float: left;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 15px;
 
 }
 
 #navi3{
-	  color: white								!important;
+	color: white								!important;
 }
