@@ -1,79 +1,37 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<link href="MSBlocks.css" rel="stylesheet">
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-		<script>
-			$(function() {
-				var dnd = [];
-				var i;
-				var h;
-				h = document.getElementsByClassName("listing");
-				h[0].style.height = $(document).height() - 16 - 20 - 32
-				h[0].style.maxHeight = $(document).height() - 16 - 20 - 32
-				$.getJSON('dnd.json', function(data) {
-					$.each(data.monsters, function(a, f) {
-						var tblRow = "<div name='cards' class='"+ f.name +" ' ><button type='button' onclick='collapsible(this.id)' id='" + f.name + "' class='collapsible'><h2>" + f.name + "</h2></button><div class='content' id='" + f.name + "Content'><blockquote style='margin:0; top: 600px;'><h2 id='" + f.name + "block' style='text-align:left'>"+ f.name +"</h2><p><em>"+ f.type +", " + f.allignment + "</em></p><hr><ul class='monsterac'><li><strong>Armor Class</strong> "+ f.ac + "</li><li><strong>Hit Points</strong> "+ f.hp + ", " + f.dice + "</li><li><strong>Speed</strong> " + f.speed + "</li></ul><hr><table class='stats'><thead><tr><th style='text-align:center'>STR</th><th style='text-align:center'>DEX</th><th style='text-align:center'>CON</th><th style='text-align:center'>INT</th><th style='text-align:center'>WIS</th><th style='text-align:center'>CHA</th></tr></thead><tbody><tr><td style='text-align:center'>"+ f.str + "</td><td style='text-align:center'>"+ f.dex + "</td><td style='text-align:center'>"+ f.con + "</td><td style='text-align:center'>"+ f.int + "</td><td style='text-align:center'>"+ f.wis + "</td><td style='text-align:center'>"+ f.cha + "</td></tr></tbody></table><hr><ul class='monsterdata'><li><strong>Damage Immunities</strong> " + f.dmgImmunities +"</li><li><strong>Damage Vulnerabilities</strong> " + f.dmgVulnerabilities +"</li><li><strong>Senses</strong> " + f.senses +"</li><li><strong>Languages</strong> " + f.languages +"</li><li><strong>Challenge</strong> " + f.chal +"</li></ul><hr>";
-						if (f.hasAbilities == true){
-							for (i=0; i<Object.entries(f.abilities[0]).length; i++){
-								tblRow = tblRow + Object.entries(f.abilities[0])[i][1];
-							}
-						} else{ }
-						
-						if (f.hasActions == true){
-							tblRow = tblRow + "<h3 class='actions'>Actions</h3>";
-							for (i=0; i<Object.entries(f.actions[0]).length; i++){
-								tblRow = tblRow + Object.entries(f.actions[0])[i][1];
-							}
-						} else{ }
-						tblRow = tblRow + "</blockquote></div></div>" ;
-						$(tblRow).appendTo(document.getElementsByClassName("listing"));
-						$('div[name="cards"]').sort(function(a, b) {
-						if (a.textContent < b.textContent) {
-							return -1;
-						} else {
-							return 1;
-						}
-						}).appendTo('.listing');
-					});
-				});
-			});
-			
-			
-			function collapsible(clickedid){
-				var x = clickedid + "Content";
-				var y = document.getElementById(x);
-				if (y.style.display == "block"){
-					 y.style.display = "none"
-				} else {
-					y.style.display = "block"
-				}
-				
-			}
-			function Search() {
-				var input, filter, card, a, i, txtValue;
-				input = document.getElementById("myInput");
-				filter = input.value.toUpperCase();
-				card = document.getElementsByName("cards");
-				for (i = 0; i < card.length; i++) {
-					txtValue = card.item(i).className;
-					if (txtValue.toUpperCase().indexOf(filter) > -1) {
-						card[i].style.display = "";
-					} else {
-						card[i].style.display = "none";
-					}
-				}
-			}
-			
-		</script>
+		<link href="nav.css" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/d5fba335cd.js" crossorigin="anonymous"></script>
 	</head>
-
-	<body>
 	
-		<div class="wrapper" style='overflow-y:auto;'>
-			<ul class="listing" id="searchable">
-				<input type="text" id="myInput" onkeyup="Search()" placeholder="Search for Monsters.." title="Type in a Monster">
-			</ul>
+	<body style="overflow: hidden;">
+		 <nav>
+		    <a href="monsters.html"><i class="far fa-user"></i></a>
+		    <a href="#second"><i class="fas fa-briefcase"></i></a>
+		    <a href="#third"><i class="fas fa-link"></i></a>
+		    <a href="#fourth"><i class="far fa-address-card"></i></a>
+
+		 </nav>
+		  
+		 <div class= 'container'> 
+			<section id= 'first'>
+				<h1></h1>
+			</section>
+		  
+			<section id= 'second'>
+				<a href="https://hazar122.github.io/CustomDNDContent/" target="_blank">DND Stuff</a>
+			</section>
+		  
+			<section id= 'third'>
+				<h1></h1>
+			</section>
+		  
+			<section id= 'fourth'>
+				<h1></h1>
+			</section>
 		</div>
 
+		
 	</body>
 </html>
