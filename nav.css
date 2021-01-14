@@ -27,9 +27,11 @@
 	color: white;
     list-style: square;
     float: none;	
+	width: 100%;
 }
 #navi5{
 	list-style-type: square;
+	color: white;
 }
 
 #navspan{
@@ -44,9 +46,9 @@
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
+  display: ;
+  display: ;
+  background-color: #333;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
