@@ -24,6 +24,11 @@
 	color: white								!important;
 }
 #navi4{
+	color: white;
+    list-style: square;
+    float: none;	
+}
+#navi5{
 	list-style-type: square;
 }
 
