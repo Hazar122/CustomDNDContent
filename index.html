@@ -8,13 +8,8 @@
 		<script>
 			$(function() {
 				var dnd = [];
-				var i, h, nav;
-				
-				nav =  document.getElementsByTagName("nav")
-				for (i=0; i<nav[0].children[0].childElementCount; i++){
-					nav[0].children[0].children[i].style.width = 100/ nav[0].children[0].childElementCount + "%";
-				}	
-				
+				var i, h;
+
 				$.getJSON('dnd.json', function(data) {
 					$.each(data.monsters, function(a, f) {
 						var tblRow = "<div name='cards' class='"+ f.name +" ' ><button type='button' onclick='collapsible(this.id)' id='" + f.name + "' class='collapsible'><h2>" + f.name + "</h2></button><div class='content' id='" + f.name + "Content'><blockquote style='margin:0; top: 600px;'><h2 id='" + f.name + "block' style='text-align:left'>"+ f.name +"</h2><p><em>"+ f.type +", " + f.allignment + "</em></p><hr><ul class='monsterac'><li><strong>Armor Class</strong> "+ f.ac + "</li><li><strong>Hit Points</strong> "+ f.hp + ", " + f.dice + "</li><li><strong>Speed</strong> " + f.speed + "</li></ul><hr><table class='stats'><thead><tr><th style='text-align:center'>STR</th><th style='text-align:center'>DEX</th><th style='text-align:center'>CON</th><th style='text-align:center'>INT</th><th style='text-align:center'>WIS</th><th style='text-align:center'>CHA</th></tr></thead><tbody><tr><td style='text-align:center'>"+ f.str + "</td><td style='text-align:center'>"+ f.dex + "</td><td style='text-align:center'>"+ f.con + "</td><td style='text-align:center'>"+ f.int + "</td><td style='text-align:center'>"+ f.wis + "</td><td style='text-align:center'>"+ f.cha + "</td></tr></tbody></table><hr><ul class='monsterdata'><li><strong>Damage Immunities</strong> " + f.dmgImmunities +"</li><li><strong>Damage Vulnerabilities</strong> " + f.dmgVulnerabilities +"</li><li><strong>Senses</strong> " + f.senses +"</li><li><strong>Languages</strong> " + f.languages +"</li><li><strong>Challenge</strong> " + f.chal +"</li></ul><hr>";
@@ -42,7 +37,13 @@
 					});
 				});
 			});
-			
+			function myFunction(){
+				var i, nav;
+				nav =  document.getElementsByTagName("nav")
+				for (i=0; i<nav[0].children[0].childElementCount; i++){
+					nav[0].children[0].children[i].style.width = 100/ nav[0].children[0].childElementCount + "%";
+				}	
+			}
 			function collapsible(clickedid){
 				var x = clickedid + "Content";
 				var y = document.getElementById(x);
@@ -73,7 +74,7 @@
 		
 	</head>
 	
-	<body style="overflow-y: auto;">
+	<body style="overflow-y: auto;" onload="myFunction()">
 		<nav>
 			<ul id="navi">
 				<li id="navi2">
